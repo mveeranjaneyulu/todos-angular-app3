@@ -12,10 +12,10 @@
                       <nav>
                           <ul class="nav nav-pills float-right">
                               <li class="nav-item">
-                                  <a class="nav-link active" [routerLink]="['/todo/0']">Add Todo </a>
+                                  <a class="nav-link active" [routerLink]="['todos']">Todos list</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link active" [routerLink]="['/template-todo/0']">T - Add Todo </a>
+                                  <a class="nav-link active" [routerLink]="['add-edit']">Add todo</a>
                               </li>
                           </ul>
                       </nav>
@@ -25,7 +25,11 @@
       </div>
   </div>
 </header>
-<router-outlet></router-outlet>
+
+<main role="main" class="container">
+  <router-outlet></router-outlet>
+</main>
+
 <footer class="fixed-bottom">
   <div class="container">
       <p>Developed with &hearts; on Angular. By <a target="_blank" href="https://twitter.com/nagarjun_immadi">@nagarjun_immadi</a>. Github <a href="https://github.com/angular-online/todos-app" target="_blank">Repo</a></p>

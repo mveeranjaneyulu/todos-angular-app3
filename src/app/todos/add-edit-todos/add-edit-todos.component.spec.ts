@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Page1Component } from './page1.component';
+import { AddEditTodosComponent } from './add-edit-todos.component';
 
-describe('Page1Component', () => {
-  let component: Page1Component;
-  let fixture: ComponentFixture<Page1Component>;
+describe('AddEditTodosComponent', () => {
+  let component: AddEditTodosComponent;
+  let fixture: ComponentFixture<AddEditTodosComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Page1Component ]
+      declarations: [ AddEditTodosComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Page1Component);
+    fixture = TestBed.createComponent(AddEditTodosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
